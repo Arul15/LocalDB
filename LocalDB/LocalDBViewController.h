@@ -7,7 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JSON.h"
 
-@interface LocalDBViewController : UIViewController
+@interface LocalDBViewController : UIViewController {
+    NSMutableData *responseData;
+    NSURL *url;
+    DBFiles *oDBFiles;
+    NSMutableArray *pArrMessage,*pArrDetails;
+
+}
+@property (nonatomic,strong) DBFiles *oDbFiles;
+@property (strong,retain) NSString *pstrName,*pstrAge,*pstrCity,*pstrCommunity,*pstrCompany,*pstrComplexion,*pstrCountry,*pstrDosam,*pstrDrinking,*pstrFamilyStatus,*pstrFamilyType,*pstrFamilyValue,*pstrFood,*pstrHeight,*pstrHobbies,*pstrImagePath,*pstrMaritalStatus,*pstrMotherTongue,*pstrPhysicalStatus,*pstrPorutham,*pstrQualification,*pstrRaasi,*pstrReligion,*pstrSalary,*pstrSmoking,*pstrStar,*pstrState,*pstrUserid,*pstrWeight;
 
 @end
